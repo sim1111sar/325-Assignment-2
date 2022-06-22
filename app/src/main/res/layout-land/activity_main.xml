@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.9"
+    android:background="@drawable/bonfire"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/profilepicture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="281dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="205dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/aboutmetitle"
+        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_picture" />
+
+    <TextView
+        android:id="@+id/aboutme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="0.8"
+        android:background="@color/black"
+        android:text="My name is Simon Sarkis, I'm from Syria. I've been in Canada for 6 years and I've been a Canadian citizen for 2 years now. My main hobby is playing video games, watching anime, movies and short tv shows. I want to become a programmer in the future and hopefully become a video game developer. My favourite movie is Fight Club. My favourite video game is Dark Souls. I like to listen all kind of music, my most listened to sony on Spotify is Right Left Wrong for Three Days Grace which is one of my favourite bands. My primary device to play games on is a PC and I like to upgrade it every once in a while, leading to some very questionable financial decisions.  "
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutmetitle" />
+
+    <TextView
+        android:id="@+id/aboutmetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="7dp"
+        android:alpha="0.8"
+        android:background="@color/black"
+        android:text="About Me"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/aboutme"
+        app:layout_constraintStart_toStartOf="@+id/profilepicture"
+        app:layout_constraintTop_toBottomOf="@+id/profilepicture" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="184dp"
+        android:clickable="true"
+        android:onClick="settings"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/aboutme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profilepicture"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_preferences" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

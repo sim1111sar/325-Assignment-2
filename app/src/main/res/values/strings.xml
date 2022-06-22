@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyProfile</string>
+    <string-array name="themes">
+        <item>Castlevania</item>
+        <item>Bonfire</item>
+        <item>Metal Gear Solid</item>
+        <item>Fight Club</item>
+    </string-array>
+</resources>

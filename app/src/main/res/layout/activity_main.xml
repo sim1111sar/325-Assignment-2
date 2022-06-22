@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.9"
+    android:background="@drawable/castlevania"
+    android:id="@+id/mainlayout"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/profilepicture"
+        android:layout_width="169dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="157dp"
+        android:layout_marginBottom="43dp"
+        app:layout_constraintBottom_toTopOf="@+id/aboutmetitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49"
+        android:background="@drawable/fight_club" />
+
+    <TextView
+        android:id="@+id/aboutme"
+        android:layout_width="388dp"
+        android:layout_height="188dp"
+        android:layout_marginBottom="100dp"
+        android:alpha="0.8"
+        android:background="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/aboutmetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="56dp"
+        android:alpha="0.8"
+        android:background="@color/black"
+        android:text="About Me"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/aboutme"
+        app:layout_constraintStart_toStartOf="@+id/profilepicture"
+        app:layout_constraintTop_toBottomOf="@+id/profilepicture" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="72dp"
+        android:clickable="true"
+        android:onClick="settings"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/profilepicture"
+        app:layout_constraintStart_toEndOf="@+id/profilepicture"
+        app:srcCompat="@android:drawable/ic_menu_preferences" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
